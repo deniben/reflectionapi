@@ -1,6 +1,5 @@
 package forlearn;
 
-import java.lang.annotation.Annotation;
 import java.lang.reflect.*;
 
 public class Main {
@@ -16,7 +15,7 @@ public class Main {
                   Test test = (Test) method.getAnnotation(Test.class);
                   int a = test.a();
                   int b = test.b();
-                  method.invoke(a, b);
+                  method.invoke(privateClass, a, b);
               }
           }
         }catch (Exception ex) {
