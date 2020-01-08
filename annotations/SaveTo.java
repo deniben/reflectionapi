@@ -1,14 +1,13 @@
-package forlearn;
+package forlearn.annotations;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-@Target(ElementType.METHOD)
+@Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface Test {
+public @interface SaveTo {
 
-    int a() default 1;
-    int b() default 1;
+    String path() default "/";
 }

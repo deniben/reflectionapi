@@ -1,5 +1,8 @@
 package forlearn;
 
+
+import forlearn.annotations.Test;
+
 public class PrivateClass {
     private int a = 25;
 
